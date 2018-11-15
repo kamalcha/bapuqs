@@ -1,0 +1,70 @@
+.section {
+	background-repeat: no-repeat;
+	position: relative;
+	&__bg {
+		background-color: $accent-color;
+		&--gradient {
+			background: $accent-color;
+			background: linear-gradient(#F6F9F9, $white);
+		}
+	}
+	&-2 {
+		background-image: url(../images/image-1.jpg);
+		background-position: left center;
+	}
+	&-6 {
+		background-image: url(../images/image-2.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
+.section__heading {
+	max-width: 768px;
+	&--bg {
+		background-color: $accent-color;
+		max-width: 100%;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+.section__footer {
+	background-color: $black-color;
+	p {
+		color: $accent-color;
+		margin-bottom: 0;
+	}
+}
+.author {
+	img {
+		height: 60px;
+		object-fit: cover;
+		width: 60px;
+	}
+	&__name {
+		color: $black-color;
+		font-size: 12px;
+		font-weight: 700;
+	}
+	&__source,
+	&__meta {
+		color: $body-color;
+		font-size: 12px;
+	}
+}
+.testimonial {
+	background-color: $white;
+	border-radius: 4px;
+	box-shadow: 0 0 6px rgba(0,0,0,.12);
+	padding: 40px;
+	position: relative;
+	&__name {
+		color: $black-color;
+		font-size: 12px;
+		font-weight: 700;
+	}
+	&__source {
+		color: $body-color;
+		font-size: 12px;
+	}
+}

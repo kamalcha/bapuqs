@@ -52,11 +52,11 @@ gulp.task('watch', function() {
 
 // Gulp Copy
 gulp.task('copy', function() {
-    gulp.src('node_modules/bootstrap/**')
+    gulp.src('node_modules/bootstrap/dist/**')
         .pipe(gulp.dest('dist/vendor/bootstrap'))
-    gulp.src('node_modules/jquery/**')
+    gulp.src('node_modules/jquery/dist/**')
         .pipe(gulp.dest('dist/vendor/jquery'))
-    gulp.src('node_modules/popper.js/**')
+    gulp.src('node_modules/popper.js/dist/**')
         .pipe(gulp.dest('dist/vendor/popper'))
 });
 

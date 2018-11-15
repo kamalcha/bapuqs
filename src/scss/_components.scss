@@ -1,0 +1,113 @@
+// Button
+.btn {
+	border-color: transparent;
+	border-radius: 10rem;
+	font-size: 11px;
+	font-weight: 600;
+	padding: .6rem 1.5rem;
+	text-transform: uppercase;
+	&-primary {
+		background-color: $primary-color;
+		&:hover,
+		&:focus,
+		&:active,
+		&:not(:disabled):not(.disabled):active,
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color: $primary-color;
+			border-color: $primary-color;
+			box-shadow: none;
+		}
+		&--alt {
+			border-radius: 2px;
+		}
+	}
+	&-outline-primary {
+		border-color: $primary-color;
+		color: $primary-color;
+		&:hover {
+			background-color: $primary-color;
+			border-color: $primary-color;
+		}
+	}
+	&-outline-secondary {
+		border-color: $black-color;
+		color: $black-color;
+		&:hover {
+			background-color: $black-color;
+			border-color: $black-color;
+		}
+	}
+	&-outline-alt {
+		border-color: $accent-color;
+		color: $accent-color;
+		&:hover {
+			background-color: $accent-color;
+			border-color: $accent-color;
+			color: $black-color;
+		}
+	}
+}
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-alt {
+	border-width: 2px;
+}
+
+// Form
+.form-control {
+	border: 1px solid #CAD5CD;
+	border-radius: 2px;
+	color: $black-color;
+	font-size: 12px;
+	&:focus {
+		border-color: $primary-color;
+		color: $black-color;
+		box-shadow: 0 0 0 3px rgba($primary-color, .25);
+	}
+}
+
+// Icons
+.material-icons {
+	color: $primary-color;
+	height: 1em;
+	width: 1em;
+	&.md-light {
+		color: $white;
+	}
+	&.md-dark {
+		color: $black-color;
+	}
+	&.md-primary {
+		color: $primary-color;
+	}
+	&.md-18 {
+		font-size: 18px;
+	}
+	&.md-24 {
+		font-size: 24px;
+	}
+	&.md-32 {
+		font-size: 32px;
+	}
+	&.md-40 {
+		font-size: 40px;
+	}
+}
+.icons-bg {
+	background-color: $primary-color;
+	height: 32px;
+	width: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__rounded {
+		border-radius: 100px;
+		&--outline {
+			background-color: $white;
+			border: 2px solid $primary-color;
+			color: $primary-color;
+			height: 56px;
+			width: 56px;
+		}
+	}
+}

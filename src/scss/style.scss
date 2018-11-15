@@ -1,50 +1,6 @@
-$white: #fff;
-
-html, body {
-	font-family: 'Poppins', sans-serif;
-	height: 100%;
-	width: 100%;
-}
-.wrapper {
-	height: 100%;
-	width: 100%;
-}
-.hero {
-	height: 100%;
-	position: relative;
-	&__image {
-		background-size: cover;
-		background-position: center;
-		height: 100vh;
-	}
-	&__wrapper {
-		background: url('../images/bg-pattern.png');
-		height: 100vh;
-	}
-	&__content {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 100%;
-		h2, p {
-			color: $white;
-		}
-	}
-	.logo {
-		border-top: 1px solid rgba(255,255,255,.16);
-		bottom: 42px;
-		position: absolute;
-		width: 100%;
-	}
-}
-.sticky-wrapper {
-	width: 100%;
-	&.sticky {
-		position:fixed;
-		top:0;
-		z-index: 99;
-	}
-}
-.pt-100 {
-	padding-top: 100px
-}
+@import "_variables.scss";
+@import "_typography.scss";
+@import "__base.scss";
+@import "_components.scss";
+@import "_utils.scss";
+@import "_layout.scss";
